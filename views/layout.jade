@@ -14,18 +14,20 @@ nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse
   a.navbar-brand(href='#') Mini Uber
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
-      li.nav-item.active
-        a.nav-link(href='#')
+      li.nav-item
+        a.btn.btn-outline-primary.nav-link(href='#')
+        
           | Accueil 
           span.sr-only (current)
       li.nav-item
-        a.nav-link(href='#') Demande
+        a.btn.btn-outline-primary.nav-link(href='#') Demande
       li.nav-item
-        a.nav-link(href='#') Recherche
+        a.btn.btn-outline-primary.nav-link(href='#') Recherche
+      
     button#button.btn.btn-outline-primary.navbar-btn(type='button', data-toggle='modal', data-target='.bs-example-modal-sm') Connexion
-    
     button#button2.btn.btn-outline-primary.navbar-btn(type='button', data-toggle='modal', data-target='.bs-example-modal-sm2') Inscription
     form.form-inline.my-2.my-lg-0
+
 header.bg-primary.text-white
       .container.text-center
         h1 Welcome to Scrolling Nav
@@ -60,7 +62,7 @@ header.bg-primary.text-white
     
     footer.py-5.bg-inverse
       .container
-        p.m-0.text-center.text-white Copyright © Your Website 2017      
+        p.m-0.text-center.text-white Copyright © BFJ      
   
 .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
   .modal-dialog.modal-sm(role='document')
@@ -77,9 +79,12 @@ header.bg-primary.text-white
           .form-group
             label.control-label(for='POST_mdp') Mot de passe
             input#POST_mdp.form-control(type='password')
+          .form-check
+            label.form-check-label.checkbox
+            input.checkbox(type='checkbox')
+            |&nbsp;Taxis
       .modal-footer
-        button.btn.btn-danger(type='button', data-dismiss='modal') Fermer
-        input.btn.btn-primary(type='submit', value='Envoyer')
+          input.btn.btn-primary(type='submit', value='Envoyer')
   
 .modal.fade.bs-example-modal-sm2(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
   .modal-dialog.modal-sm(role='document')
@@ -105,9 +110,12 @@ header.bg-primary.text-white
           .form-group
             label.control-label Confirmation mot de passe
             input.form-control(type='password')
+          .form-check
+            label.form-check-label.checkbox
+            input.checkbox(type='checkbox')
+            |&nbsp;Taxis
       .modal-footer
-        button.btn.btn-danger(type='button', data-dismiss='modal') Fermer
-        input.btn.btn-primary(type='submit', value='Envoyer')
+         input.btn.btn-primary(type='submit', value='Envoyer')
 
 
 script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
