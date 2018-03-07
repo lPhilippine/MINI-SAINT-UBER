@@ -23,7 +23,7 @@ module.exports = (sequelize, Datatype) => {
 
         ta_portable: {
             type: Datatype.STRING(12),
-            allowNull: false505
+            allowNull: false
         },
 
         ta_mail: {
