@@ -16,6 +16,21 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(50),
             allowNull: true
         },
-    });
-    return Secteur;
+    }, 
+        {
+            classMethods: {
+                associate: function (models) {
+
+                    Secteur.belongsTo(models.Taxis, {
+						foreignKey: 'se_id'
+                    });
+                    
+                    Secteur.belongsTo(models.Courses, {
+						foreignKey: 'se_id'
+					});
+
+                }
+            }
+        });
+return Secteur;
 };

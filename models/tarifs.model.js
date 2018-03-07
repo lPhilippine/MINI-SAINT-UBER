@@ -21,6 +21,21 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DECIMAL,
             allowNull: false
         },
-    });
+    },
+        {
+            classMethods: {
+                associate: function (models) {
+
+                    Tarifs.belongsTo(models.Taxis, {
+                        foreignKey: 'tf_id'
+                    });
+
+                    Tarifs.belongsTo(models.Courses, {
+                        foreignKey: 'tf_id'
+                    });
+
+                }
+            }
+        });
     return Tarifs;
 };
