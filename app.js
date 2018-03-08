@@ -26,6 +26,14 @@ var home = require('./routes/home.route');
 var users = require('./routes/users.route');
 app.use('/', home); // HOME
 app.use('/users', users); // USERS
+var courses = require('./routes/courses.route');
+var inscription = require('./routes/inscription.route');
+
+
+app.use('/', home); // HOME
+app.use('/users', users); // USERS
+app.use('/courses', courses); // COURSES
+app.use('/inscription', inscription); //INSCRIPTION
 
 /**
  * ERRORS
