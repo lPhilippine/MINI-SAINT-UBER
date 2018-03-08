@@ -8,6 +8,13 @@ class CoursesController {
       res.render('courses', { title: 'Courses' })
 //    );
   }
+
+  postCourses(req,res) {
+    CoursesService.postCourses(req.body);
+      
+      res.redirect('/');
+
+}
 }
 
 module.exports = new CoursesController();

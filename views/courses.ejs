@@ -1,7 +1,43 @@
-extends layout
-
-block content
-  h1 COURSES
-  p Welcome 
-
+<h4><%= title %></h4>
+<div>
+    <div>
+        <form action="/courses" method="post">
+            <div class="form-group">
+                <label class="control-label">Départ</label>
+                <br>
+                <input class="control-label" type="string" name="co_prise_charge">
+            </div>
+            <div>
+                <label class="control-label">Arrivée</label>
+                <br>
+                <input class="control-label" type="string" name="co_destination">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Nombre de place</label>
+                <br>
+                <select class="form-control" id="sel1" name="co_place_necessaire" type="int">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Date de départ</label>
+              <br>
+              <input class="control-label" type="string" name="co_date" placeholder="AA-MM-JJ">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Heure Départ</label>
+            <br>
+            <input class="control-label" type="string" name="co_heure" placeholder="HH:mm:ss">
+        </div>
+    </div>
+    <div>
+        
+        <input type="submit" class="btn btn-primary" value="Envoyer">
+    </div>
+    </form>
+</div>
 

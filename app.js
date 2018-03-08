@@ -28,12 +28,14 @@ app.use(expressLayouts);
 var home = require('./routes/home.route');
 var users = require('./routes/users.route');
 var courses = require('./routes/courses.route');
-var inscription = require('./routes/inscription.route');
+var inscription =require('./routes/inscription.route');
+var connectionUser = require('./routes/connection-user.route');
 
 app.use('/', home); // HOME
 app.use('/users', users); // USERS
 app.use('/courses', courses); // COURSES
-app.use('/inscription', inscription);
+app.use('/inscription', inscription); //INSCRIPTION
+app.use('/connectionUser', connectionUser); // CONNECTION USER
 
 /**
  * ERRORS

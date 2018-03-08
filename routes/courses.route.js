@@ -5,4 +5,6 @@ var CoursesController = require('../controllers/courses.controller')
 /* GET courses page. */
 router.get('/', CoursesController.getCourses);
 
+router.post('/',CoursesController.postCourses);
+
 module.exports = router;
