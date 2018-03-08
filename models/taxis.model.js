@@ -38,7 +38,7 @@ module.exports = (sequelize, Datatype) => {
 
         },
         {
-
+            freezeTableName: true,
             classMethods: {
                 associate: function (models) {
 

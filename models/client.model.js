@@ -44,7 +44,7 @@ module.exports = (sequelize, DataTypes) => {
            /*
              *   ALTER TABLE USER ADD CONSTRAINT FK_Client_cl_od FOREIGN KEY (cl_id) REFERENCES Courses(cl_id);
              */
-            Clientt.belongsTo(models.Courses, {
+            Client.belongsTo(models.Courses, {
                 foreignKey: 'cl_id'
             });
         }
