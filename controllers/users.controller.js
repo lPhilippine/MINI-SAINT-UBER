@@ -4,7 +4,6 @@ var debug = require('debug')('server:server');
 class UserController {
   getUsers(req,res) {
     res.render('layout', { title: 'User' });
-
   }
 }
 
