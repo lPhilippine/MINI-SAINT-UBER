@@ -10,10 +10,8 @@ class InscriptionController {
       }
 
   postInscription(req,res) {
-        InscriptionService.postInscription(req.body);
-          
-          res.redirect('/connectionUser');
-    
+        InscriptionService.postInscription(req.body);          
+          res.redirect('/connectionSuccess');    
   }
 }
 

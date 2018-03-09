@@ -30,12 +30,14 @@ var users = require('./routes/users.route');
 var courses = require('./routes/courses.route');
 var inscription =require('./routes/inscription.route');
 var connectionUser = require('./routes/connection-user.route');
+var connectionSuccess = require('./routes/connection-success.route');
 
 app.use('/', home); // HOME
 app.use('/users', users); // USERS
 app.use('/courses', courses); // COURSES
-app.use('/inscription', inscription); //INSCRIPTION
+app.use('/home', inscription); //INSCRIPTION
 app.use('/connectionUser', connectionUser); // CONNECTION USER
+app.use('/connectionSuccess', connectionSuccess); // CONNECTION SUCESS
 
 /**
  * ERRORS
