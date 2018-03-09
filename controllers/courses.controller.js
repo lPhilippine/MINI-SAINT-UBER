@@ -5,7 +5,7 @@ var CoursesService = require('../services/courses.service')
 class CoursesController {
   getCourses(req,res) {
 //    CoursesService.getCourses(req.body).then(
-      res.render('courses', { title: 'Courses' })
+      res.render('courses', { title: 'Mini Uber' })
 //    );
   }
 
