@@ -32,19 +32,18 @@ var inscription =require('./routes/inscription.route');
 var inscriptionUsers = require('./routes/inscription-users.route');
 var connectionUser = require('./routes/connection-user.route');
 var connectionSuccess = require('./routes/connection-success.route');
+var connectionClientSuccess = require('./routes/connection-client-success.route')
 
 
 app.use('/', home); // HOME
 app.use('/users', users); // USERS
 app.use('/courses', courses); // COURSES
-<<<<<<< HEAD
 app.use('/home', inscription); //INSCRIPTION
-=======
 app.use('/inscription', inscription); //INSCRIPTION
 app.use('/inscription-users', inscriptionUsers);
->>>>>>> feature/005_-_Connection_User
 app.use('/connectionUser', connectionUser); // CONNECTION USER
-app.use('/connectionSuccess', connectionSuccess); // CONNECTION SUCESS
+app.use('/connectionSuccess', connectionSuccess); // CONNECTION TAXI SUCCESS
+app.use('/connectionClientSuccess', connectionClientSuccess); // CONNECTION CLIENT SUCCESS
 
 /**
  * ERRORS
