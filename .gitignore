@@ -43,3 +43,5 @@ yarn-error.log
 Thumbs.db
 
 /server/node_modules
+
+/config
