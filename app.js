@@ -29,13 +29,20 @@ var home = require('./routes/home.route');
 var users = require('./routes/users.route');
 var courses = require('./routes/courses.route');
 var inscription =require('./routes/inscription.route');
+var inscriptionUsers = require('./routes/inscription-users.route');
 var connectionUser = require('./routes/connection-user.route');
 var connectionSuccess = require('./routes/connection-success.route');
+
 
 app.use('/', home); // HOME
 app.use('/users', users); // USERS
 app.use('/courses', courses); // COURSES
+<<<<<<< HEAD
 app.use('/home', inscription); //INSCRIPTION
+=======
+app.use('/inscription', inscription); //INSCRIPTION
+app.use('/inscription-users', inscriptionUsers);
+>>>>>>> feature/005_-_Connection_User
 app.use('/connectionUser', connectionUser); // CONNECTION USER
 app.use('/connectionSuccess', connectionSuccess); // CONNECTION SUCESS
 

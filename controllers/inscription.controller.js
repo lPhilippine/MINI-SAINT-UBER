@@ -5,7 +5,7 @@ var InscriptionService = require('../services/inscription.service')
 class InscriptionController {
   getInscription(req,res) {
         //HomeService.getHome(req.body).then(
-          res.render('inscription', { title: 'Inscription' })
+          res.render('inscription', { title: 'Mini Uber' })
         //);
       }
 
